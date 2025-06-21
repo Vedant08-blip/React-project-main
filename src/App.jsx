@@ -12,6 +12,7 @@ import APIfetchdata from './pages/APIfetchdata'
 import EmojiPicker from './pages/emoji'
 import API from './pages/API'
 import Form from './pages/form'
+import FormAutoSave from './pages/FormAutoSave' // <-- import FormAutoSave
 import './index.css'
 
 function App() {
@@ -19,21 +20,19 @@ function App() {
     <>
       <Navbar />
       <Routes>
-
         <Route path="/counter" element={<Counter />} />
         <Route path="/twitterr"  element={<TweetInput/>}/>
         <Route path="/input" element={<Input />} />
         <Route path="/data"  element={<Data/>}/>
         <Route path="/store"  element={<Store/>}/>
         <Route path="/api" element= {<APIfetchdata/>}/>
-         <Route path="/apidata" element={<API/>}/>
-       <Route path="/emoji" element={<EmojiPicker/>}/>
-       <Route path="/form" element={<Form/>}/>
+        <Route path="/apidata" element={<API/>}/>
+        <Route path="/emoji" element={<EmojiPicker/>}/>
+        <Route path="/form" element={<Form/>}/>
+        <Route path="/formautosave" element={<FormAutoSave/>}/> {/* <-- add route */}
       </Routes>
-
     </>
   );
 }
-
 
 export default App
